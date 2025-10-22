@@ -7,3 +7,28 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
+
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; /* optional: for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* or use rgba(0,0,0,0.05) for subtle track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f2e33; /* gradient look */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f2e33; /* hover effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2f2e33 transparent;
+}
